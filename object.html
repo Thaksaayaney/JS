@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        var student= {name:"Thakshi", age:23, place:"jaffna"};
+        var car= {type:"Fiat", model:"900",color:"black"};
+        var person= {
+            firstname:"Thakshi", 
+            lastname:"Moorthy", 
+            age:23, 
+            fullname: function()
+                {
+                    return this.firstname+" "+this.lastname;
+                }
+        };
+        document.getElementById("demo1").innerHTML=car.type;
+        document.getElementById("demo2").innerHTML="The car model is "+car.model;
+        document.getElementById("demo3").innerHTML="The car type is "+car.type + "."+" The car model is "+car.model +"."+ " The car color is "+car.color+".";
+        document.getElementById("demo4").innerHTML="The car model is "+car["model"];
+        document.getElementById("demo5").innerHTML=student["name"];
+        document.getElementById("demo6").innerHTML=person.fullname();
+    </script>
+</body>
+</html>

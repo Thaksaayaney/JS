@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        /*var grade="A";
+        var message;
+        switch(grade)
+        {
+            case "A":
+                message="Very Good Score";
+                break;
+            case "B":
+                message="Good Score";
+                break;
+            case "C":
+                message="Average Score";
+                break;
+            default: 
+                message="Poor";
+        }
+        document.getElementById("demo").innerHTML=message;*/
+
+        var day;
+        var dayno=new Date().getDay;
+        switch(dayno)
+        {
+            case 0:
+            case 6:  
+            day="This is weekend";
+            break;
+
+            case 1:
+            case 2:
+            case 3:  
+            day="This is weekday";
+            break;
+
+            case 4:
+            case 5:  
+            day="Soon it is weekend";
+            break;
+        }
+        document.getElementById("demo").innerHTML=day;
+    </script>
+</body>
+</html>

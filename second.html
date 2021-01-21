@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var numArray = [9,5,89,1991,23,11];
+
+        alert("Max value is " + arrayMaxMin(numArray, "Max"));
+        alert("Min value is " + arrayMaxMin(numArray, "Min"));
+
+        function arrayMaxMin(array, num) {
+
+            var value = array[0];   // variable to hold the current max/min value.
+
+            for (var i = 1; i < array.length; i++) {
+                if (num == "Min") {
+                    if (array[i] < value) {
+                        value = array[i];
+                    }
+                } else if (num == "Max") {
+                    if (array[i] > value) {
+                        value = array[i];
+                    }
+                }
+
+            }
+            return value;
+        }
+    </script>
+</body>
+
+</html>

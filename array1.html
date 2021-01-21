@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        var student=["Thakshi","Veny","Shagira","Sheshan"];
+        //var student=new Array("Thakshi","Veny","Shagira","Sheshan");
+        student[5]="Thasee";
+        document.getElementById("demo1").innerHTML=student;
+        document.getElementById("demo2").innerHTML=student[1];
+        document.getElementById("demo3").innerHTML=student[4];
+        document.getElementById("demo4").innerHTML=student[5];
+        document.getElementById("demo5").innerHTML=student.length;
+        document.getElementById("demo6").innerHTML=[student.length-1];
+    </script>
+
+</body>
+</html>

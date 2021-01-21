@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        /*function Total(a,b)
+        {
+            var sum=a+b;
+            return sum;
+        }
+        document.getElementById("demo1").innerHTML=Total(4,5);
+        document.getElementById("demo2").innerHTML=Total(7,6);
+        document.getElementById("demo3").innerHTML=Total(4,9);*/
+
+
+
+        function myFunction(a,b,c)
+        {
+            var sum=a+b+c , avg=sum/3;
+            return "The sum is "+ sum + " The average is "+ avg;
+        }
+
+        function circle(r)
+        {
+            var pi=3.14;
+            var cir=2*pi*r;
+            var area=pi*r*r;
+            return "Circumference is "+cir+" Area is "+area;
+            //return "Circumference is "+cir+"<br>"+" Area is "+area;
+
+        }
+        
+        document.getElementById("demo1").innerHTML=myFunction(2,3,4);
+        document.getElementById("demo2").innerHTML=circle(7);
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        var fruits = ["Apple", "Banana"];
+        fruits.splice(1, 0, "Mango", "Pineapple", "Orange", "Avocado", "Grapes");
+       
+
+        console.log(fruits); 
+        document.getElementById("demo1").innerHTML=fruits[3];
+        document.getElementById("demo2").innerHTML=fruits.length;
+        
+        var getReverse=fruits.reverse(); 
+        document.writeln(getReverse);  
+    </script>
+</body>
+
+</html>

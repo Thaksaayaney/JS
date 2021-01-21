@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function assignColor(score){
+            var mgs;
+            if (0<=score && score<=10)
+            {
+                mgs="The word blue";
+            }
+            else if (11<=score && score<=20)
+            {
+                mgs="The word red";
+            }
+            else if (21<=score && score<=30)
+            {
+                mgs="The word green";
+            }
+            else
+            {
+                mgs="It is not a correct colour option";
+            }
+            return mgs;
+        }
+        document.getElementById("demo").innerHTML=assignColor(-2);
+    </script>
+</body>
+</html>

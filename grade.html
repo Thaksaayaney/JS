@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        function assignGrade(Marks){
+            var grade;
+            if (Marks >=75) {
+                grade="A";
+            }
+            else if (Marks >=60) {
+                grade="B";
+            }
+            else if (Marks >=45) {
+                grade="C";
+            }
+            else if (Marks <45) {
+                grade="F";
+            }
+            return "The grade is "+grade;
+        }
+        document.getElementById("demo1").innerHTML = assignGrade(90);
+        document.getElementById("demo2").innerHTML = assignGrade(60);
+        document.getElementById("demo3").innerHTML = assignGrade(55);
+        document.getElementById("demo4").innerHTML = assignGrade(30);
+    </script>
+</body>
+</html>
