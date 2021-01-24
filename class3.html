@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        class school {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            anniversary(x) {
+                return x-this.year;
+            }
+        }
+        let date = new Date();
+        let year=date.getFullYear();
+        school1 = new school("JHLC", 1943);
+        school2 = new school("JHC", 1886);
+        document.getElementById("demo1").innerHTML = school1.name + " - Anniversary Year is " + school1.anniversary(year);
+        document.getElementById("demo2").innerHTML = school2.name + " - Anniversary Year is " + school2.anniversary(2010);
+    </script>
+</body>
+
+</html>
